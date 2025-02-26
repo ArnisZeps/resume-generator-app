@@ -1,4 +1,4 @@
-import BaseButton from "@/components/BaseButton";
+import LinkButton from "@/components/LinkButton";
 
 export default function Home() {
   return (
@@ -11,7 +11,7 @@ export default function Home() {
             <p>Only 2% of resumes win. Yours will be one of them. Lets build you a resume that works.</p>
           </div>
           <div className="basis-1/2 flex justify-center items-center">
-            <BaseButton></BaseButton>
+            <LinkButton text={"Start Now"} href="http://www.google.com" />
           </div>
         </div>
       </div>
