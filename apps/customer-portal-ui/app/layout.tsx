@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
+import Footer from "@/components/Footer";
 import { Geist, Geist_Mono, IBM_Plex_Sans } from "next/font/google";
 import "@/styles/globals.css";
 
@@ -32,10 +33,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${ibmPlexSans} ${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${ibmPlexSans} ${geistSans.variable} ${geistMono.variable} antialiased h-screen flex flex-col`}
       >
         <Header />
-        {children}
+        <main className="flex-1">
+         {children}
+        </main>
+        <Footer />
       </body>
     </html>
   );

@@ -3,8 +3,8 @@ import Image from "next/image";
 
 export default function Home() {
   return (
-    <div className="flex flex-col gap-6 md:gap-48">
-      <div className="bg-stone-200 font-medium">
+    <div className="flex flex-col gap-6 md:gap-48 h-full just">
+      <div className="bg-stone-200">
         <div className="px-0 flex flex-col items-center max-w-7xl mx-auto md:gap-16 md:flex-row md:place-items-center md:px-16">
           <div className="flex py-10 flex-col gap-6 items-center md:items-start md:gap-12">
             <h1 className="text-2xl">Professional resume builder</h1>
