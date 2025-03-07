@@ -33,7 +33,7 @@ export default function ContactForm() {
   };
 
   return (
-      <div className="container px-4">
+      <div className="w-full max-w-sm md:max-w-4xl px-4">
         <h2 className="text-2xl font-semibold text-gray-800 mb-6 text-center">
           Contact Us
         </h2>
@@ -44,7 +44,7 @@ export default function ContactForm() {
         )}
         <form
           onSubmit={handleSubmit}
-          className="space-y-6 bg-white p-6 rounded-lg shadow-lg"
+          className="space-y-6 bg-white p-6 rounded-lg"
         >
           <div>
             <label

@@ -1,7 +1,7 @@
 import LinkButton from "@/components/LinkButton";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
-import Image from "next/image";
+// import Image from "next/image";
 import ContactForm from "./_components/ContactForm/ContactForm";
 
 export default function Home() {
@@ -27,8 +27,9 @@ export default function Home() {
         </div>
       </section>
       <section className="h-screen flex flex-col snap-start">
-        <div className="flex-1 flex items-center justify-center">
+        <div className="flex-1 flex flex-col items-center justify-center">
           <ContactForm></ContactForm>
+
         </div>
         <Footer />
       </section>
