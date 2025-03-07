@@ -31,15 +31,15 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" className="snap-y snap-mandatory">
       <body
         className={`${ibmPlexSans} ${geistSans.variable} ${geistMono.variable} antialiased h-screen flex flex-col`}
       >
-        <Header />
-        <main className="flex-1">
+        {/* <Header /> */}
+        <main className="flex-1 ">
          {children}
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </body>
     </html>
   );
