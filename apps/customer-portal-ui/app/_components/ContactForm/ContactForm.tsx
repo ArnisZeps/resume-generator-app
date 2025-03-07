@@ -1,6 +1,7 @@
 // components/ContactForm.tsx
 "use client";
 
+import BaseButton from "@/components/BaseButton";
 import { useState, FormEvent, ChangeEvent } from "react";
 
 // Define the type for form data
@@ -100,13 +101,8 @@ export default function ContactForm() {
               placeholder="How can we help you?"
             />
           </div>
-          <div className="text-center">
-            <button
-              type="submit"
-              className="px-6 py-2 bg-blue-600 text-white font-medium rounded-md hover:bg-blue-700 transition-colors duration-200"
-            >
-              Send Message
-            </button>
+          <div className="flex justify-center">
+            <BaseButton type="submit" text="Send Message" dark={true} />
           </div>
         </form>
       </div>
