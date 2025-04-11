@@ -28,8 +28,7 @@ export default function Home() {
       </section>
       <section className="h-screen flex flex-col snap-start">
         <div className="flex-1 flex flex-col items-center justify-center">
-          <ContactForm></ContactForm>
-
+          <ContactForm />
         </div>
         <Footer />
       </section>
